@@ -13,5 +13,5 @@ if q1=='both'and q2=='alive':
     print("dog")
 if q1=='both'and q2=='not alive':
     print("cellphone")    
-if (q1!='inside'or q1!='outside'or q1!='both')or(q2!='alive'or q2!='not alive'):
+if (q1!='inside'or q1!='outside'or q1!='both'or q2!='alive'or q2!='not alive'):
      print("sorry could'nt guess what you are thinking of")
