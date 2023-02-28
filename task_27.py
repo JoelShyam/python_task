@@ -5,32 +5,32 @@ cost = 0
 def add_keychain():
     global reduce
     global add
-    add = int(input("You have {} keychains. How many to add? ".format(reduce)))
+    add = int(input(f"You have {reduce} keychains. How many to add? "))
     reduce += add
-    print("Now you have {} keychains.".format(reduce))
+    print(f"Now you have {reduce} keychains.")
 
 def remove_keychain():
     global reduce
-    remove = int(input("You have {} keychains. How many to remove? ".format(reduce)))
+    remove = int(input(f"You have {reduce} keychains. How many to remove? "))
     reduce -= remove
-    print("Now you have {} keychains.".format(reduce))
+    print(f"Now you have {reduce} keychains.")
 
 def current_order():
     global reduce
     global cost
     cost = 10 * reduce
-    print("Now you have {} keychains.".format(reduce))
+    print(f"Now you have {reduce} keychains.")
     print("Keychains cost $10 each.")
-    print("Total cost is: ${}.".format(cost))
+    print(f"Total cost is: ${cost}.")
 
 def checkout():
     global reduce
     global cost
     name = input("What is your name? ")
-    print("You have {} keychains.".format(reduce))
+    print(f"You have {reduce} keychains.")
     print("Keychains cost $10 each.")
-    print("Total cost is: ${}.".format(cost))
-    print("Thank you for your order, {}.".format(name))
+    print(f"Total cost is: ${cost}.")
+    print(f"Thank you for your order, {name}.")
 
 while True:
     print("Ye Olde Keychain Shoppe")
